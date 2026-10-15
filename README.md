@@ -28,12 +28,6 @@ Keep the complete `source` tree together. Do not rename CAD parts, flatten folde
 
 CAD files and videos use Git LFS. Install Git LFS before the first `git add`, and use `git lfs pull` after cloning to obtain the actual files. GitHub's ZIP download may contain pointers instead of LFS content, depending on the repository settings. See [GitHub's Git LFS documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage).
 
-## Language and attribution
-
-Navigation and preparation notes are English first, followed by Chinese. Original documents, spreadsheets, drawings and filenames retain their source language; this archive is not a full English translation. Historical inspection and training documents are records of this project, not a statement of current competition rules. Video descriptions are based on filenames; no performance claims have been independently verified.
-
-Official referee-system models, commercial components and library assets are included as assembly dependencies. Their presence does not establish authorship or redistribution rights. No blanket open-source license has been assigned. Team-member names occur in historical documents; a private repository is recommended initially, with team and third-party permissions reviewed before public release.
-
 ---
 
 # RoboMaster 步兵机器人机械设计资料
@@ -49,10 +43,3 @@ Official referee-system models, commercial components and library assets are inc
 - CAD 和视频采用 Git LFS。首次 `git add` 前先安装并启用 Git LFS；克隆后执行 `git lfs pull`。直接下载 ZIP 是否含实际大文件取决于仓库设置。
 - 本次没有发现可确认的固件、控制程序或完整仿真工程。
 
-## 来源与语言
-
-说明及索引采用英文在前、中文在后。原始 Word、表格和图纸未全文翻译，文件名保留中文。检录标准和训练资料属于历史项目记录，不代表现行规则；视频说明依据文件名，未独立验证性能。
-
-官方裁判系统模型、商业部件和库素材作为装配依赖保留，不应全部宣称为个人原创，未统一添加开源许可证。历史文档含队员姓名，建议先建私有仓库，公开前确认团队及第三方资料的发布权限。
-
-本次收录 516 份源文件，约 722.78 MiB。详见[文件索引](docs/FILE_INDEX.md)、[整理记录](PREPARATION.md)和[上传步骤](UPLOAD.md)。

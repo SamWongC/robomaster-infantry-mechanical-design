@@ -1,0 +1,12 @@
+# Local CAD backups and editor lock files
+~$*
+*.bak
+*.BAK
+*.swp
+*.swo
+*.tmp
+*.TMP
+*.slderr
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -2,7 +2,32 @@
 
 Mechanical project materials from the local RM collection, organized for browsing and preservation. The archive contains first- and second-generation infantry chassis and gimbal assemblies, omnidirectional wheels, a parallelogram wheel mechanism, manufacturing drawings, bills of materials and historical test videos. Generation and event labels follow the original filenames; they are not verified release designations.
 
-## Start here
+## Explore the robot
+
+Start with the recorded [translation and turning demonstration](source/%E5%B9%B3%E5%9B%9B%E8%BD%AE%E7%B3%BB%E4%BF%AE%E6%94%B92.0/%E6%AD%A5%E5%85%B5%E7%BB%84%E4%B8%AD%E6%9C%9F%E8%B5%84%E6%96%99/%E6%AD%A5%E5%85%B5%E7%BB%84%E4%B8%AD%E6%9C%9F%E8%A7%86%E9%A2%91/%E5%AE%8C%E6%95%B4%E8%BF%90%E5%8A%A8%EF%BC%9A%E5%B9%B3%E7%A7%BB%E4%B8%8E%E8%BD%AC%E5%90%91.mp4) and [ramp demonstration](source/%E5%B9%B3%E5%9B%9B%E8%BD%AE%E7%B3%BB%E4%BF%AE%E6%94%B92.0/%E6%AD%A5%E5%85%B5%E7%BB%84%E4%B8%AD%E6%9C%9F%E8%B5%84%E6%96%99/%E6%AD%A5%E5%85%B5%E7%BB%84%E4%B8%AD%E6%9C%9F%E8%A7%86%E9%A2%91/%E7%88%AC15%C2%B0%E5%9D%A1%E4%B8%8E%E5%AE%9E%E6%97%B6%E5%8A%9F%E7%8E%87%E6%98%BE%E7%A4%BA.mp4). These are historical recordings; the ramp angle is taken from the source filename, not an independently measured result.
+
+```mermaid
+flowchart LR
+    A[Infantry mechanical system] --> B[Chassis]
+    A --> C[Gimbal]
+    B --> D[Omnidirectional wheels]
+    B --> E[Parallelogram wheel mechanism]
+    C --> F[First and second generation packages]
+    B --> G[Manufacturing drawings and BOM]
+```
+
+This is a navigation map of the archive, not a dimensioned assembly drawing.
+
+| Interest | Suggested reading path |
+| --- | --- |
+| Robot motion | Recorded translation/turning and ramp videos → chassis packages |
+| Mechanical mechanisms | Wheel and parallelogram assemblies → related parts |
+| Design for manufacture | Manufacturing package → BOM → drawings |
+| Historical testing | [Video/document index](docs/FILE_INDEX.md) → inspection and maintenance records |
+
+The archive demonstrates the scope of the mechanical project through CAD, manufacturing files and recordings. It does not include verified firmware or a new performance benchmark. Supplier components and team materials retain their original context.
+
+## Assembly packages
 
 | Package / 材料包 | Directory / 文件夹 | Suggested entry / 建议入口 |
 | --- | --- | --- |
@@ -18,9 +43,6 @@ Mechanical project materials from the local RM collection, organized for browsin
 The assembly entries above are identified from filenames, not confirmed by opening the CAD models. The competition package folder says “regional competition,” while its main assembly filename says “provincial competition”; both names are retained. No single version has been declared the final or preferred design.
 
 - [Document and video index](docs/FILE_INDEX.md)
-- [Preparation and verification record](PREPARATION.md)
-- [Upload instructions](UPLOAD.md)
-- [Source manifest](SOURCE_MANIFEST.csv) and [excluded files](EXCLUDED_FILES.csv)
 
 ## Using the CAD files
 
@@ -43,3 +65,15 @@ CAD files and videos use Git LFS. Install Git LFS before the first `git add`, an
 - CAD 和视频采用 Git LFS。首次 `git add` 前先安装并启用 Git LFS；克隆后执行 `git lfs pull`。直接下载 ZIP 是否含实际大文件取决于仓库设置。
 - 本次没有发现可确认的固件、控制程序或完整仿真工程。
 
+
+
+## 中文阅读建议
+
+先看上方“平移与转向”和“爬坡”视频入口，再按底盘、云台、轮系和加工资料选择材料包。结构关系图仅作导航，不是装配图。视频是历史记录，不能仅凭文件名把角度或性能视为已独立验证的数据。原始团队材料和供应商零件保留其来源背景。
+
+<details>
+<summary>Archive maintenance / 归档维护</summary>
+
+[Preparation record](PREPARATION.md) · [Source manifest](SOURCE_MANIFEST.csv) · [Excluded-file inventory](EXCLUDED_FILES.csv) · [Original upload notes](UPLOAD.md)
+
+</details>
